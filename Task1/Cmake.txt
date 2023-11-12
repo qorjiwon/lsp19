@@ -1,0 +1,41 @@
+CMake
+CMake는 여러 환경(window, linux 등)에 맞는 build process를 작성한 것으로, CmakeList.txt에 기술된 내용을 바탕으로 각 환경에 맞는 Makefile을 생성해 주는 빌드 프로그램이다.
+Cmake를 통해 Makefile을 만들면 파일이 추가되지 않는 한 Makefile을 수정하지 않고 자동으로 생성해준다는 장점이 있지만, 단순히 Makefile을 생성해 주는 것이기 때문에 Make를 추가로 해야한다.
+
+
+linux에 Cmake가 없을 경우 다음 명령어를 통해 설치할 수 있다.
+> sudo apt install cmake
+
+<예제>
+1.CMakeLists.txt 작성
+앞서 말했듯 CMake는 CmakeLists.txt에 기술된 것을 바탕으로 Makefile을 생성하기 때문에 이를 작성해 주어야 한다.
+main.cpp를 빌드하여 example이라는 실행파일을 만들기 위한 CMakeLists.txt는 다음과 같다.
+```
+cmake_minimum_required(VERSION 3.0.1)
+project(example)
+add_executable(${PROJECT_NAME} main.cpp)
+```
+
+2.cmake 사용
+> cmake <CmakeLists.txt가 있는 파일 경로>
+
+그러면 다음과 같은 파일들이 생성된다.
+> ls
+-> CmakeLists.txt main.cpp CmakeCache.txt cmake_install.cmake Makefile CmakeFiles
+
+3.make를 실행하면 실행파일인 example이 생성된다
+
+4.example을 실행하면 기존 코드가 정상적으로 실행되는 것을 확인할 수 있다.
+
+
+<사용된 CmakeLists.txt Functions>
+cmake_minimum_required(VERSION 3.0.1)
+-> project를 빌드하기 위해 필요한 최소한의 CMake 버전 명시
+
+project(name)
+-> project의 이름 명시
+이 함수 실행 후 CMake내부 매크로로 ${PROJECT_NAME}으로 project이름을 호출할 수 있다.
+
+add_executable(result src)
+->Makefile을 작성할 때 gcc -o result src와 같다. src를 빌드하여 result라는 실행 파일을 만드는 것을 명시한다.
+
