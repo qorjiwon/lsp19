@@ -1,0 +1,23 @@
+숙제 2
+
+
+내용: Quick Introduction to C
+
+숙제1: Quick Introduction to C의 실습 내용 및 빈칸 채우기
+
+숙제2: 추가 프로그램 작성
+	string.c에 다음의 함수를 추가하고, main함수에 사용 예를 보일 것
+	int strcmp_p(char *dst, char *src);
+	int strcmp_a(char dst[], char src[]);
+	위 두함수는 strcmp 함수와 같은 일을 수행함
+
+
+
+
+	방법
+	
+	숙제1: 실습 내용을 이해하고 source file에 comment를 추가함
+	숙제2: 추가의 프로그램을 작성하고 사용 예를 보이며 자세한 comment 포함
+
+
+제출: File은 자신의 home directory 밑에 정리하고, 경로만을 과제 제출 게시판에 등록

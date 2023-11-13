@@ -1,0 +1,20 @@
+숙제 6
+
+
+내용: Signals
+
+숙제1: Signals의 실습 내용 및 빈칸 채우기
+
+숙제2: 추가 프로그램 작성
+	Parent process가 child process의 종료시, SIGCHLD signal을 asynchronous하게 처리하는 프로그램을 작성
+	즉, child process의 종료를 synchronous하게 처리하기 위해서는 wait() system call을 사용하고, asynchronous하게 처리하기 위해서는 signal을 사용함을 익힘
+	[Hint] Processes and Threads의 wait.c 실습 내용에서 wait 부분을 while (1) ; 로 변경하고, fork() 이전에 signal handler를 등록
+
+
+
+	방법
+
+	- 실습 내용을 이해하고 source file에 comment를 추가함
+	- 추가의 프로그램을 작성하고 사용 예를 보이며 자세한 comment 포함
+	- File은 자신의 home directory 밑에 정리하고, 경로만을 과제 제출 게시판에 등록
+	- 과제 제출 게시판에 등록할때 제목은 syllabus를 참고할 것

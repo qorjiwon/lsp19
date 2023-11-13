@@ -1,0 +1,21 @@
+숙제 3
+
+
+
+내용: File I/O
+
+숙제1: File I/O의 실습 내용 및 빈칸 채우기
+
+숙제2: 추가 프로그램 작성
+	text file을 입력받아 모두 대문자로 변경하여 출력하는 프로그램 upper를 작성하시오.
+	$ ./upper upper.c
+
+
+
+	방법
+	
+	실습 내용을 이해하고 source file에 comment를 추가함
+	추가의 프로그램을 작성하고 사용 예를 보이며 자세한 comment 포함
+	File은 자신의 home directory 밑에 정리하고, 
+	경로만을 과제 제출 게시판에 등록
+	과제 제출 게시판에 등록할때 제목은 syllabus를 참고할 것
